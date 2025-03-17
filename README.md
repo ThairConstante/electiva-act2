@@ -1,1 +1,2 @@
-# electiva-act2
+# Actividad 2
+##Thair Constante Pineda
