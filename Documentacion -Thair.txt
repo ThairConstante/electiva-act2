@@ -1,0 +1,43 @@
+Documentación del Proyecto Flask
+
+Importación de módulos:
+         Flask: Se importa la clase Flask, que es la base para crear una aplicación web en Flask.
+         jsonify: Se importa jsonify, una función que convierte estructuras de datos de Python (como listas o diccionarios) en respuestas JSON.
+
+Creación de la aplicación Flask:
+
+      app es una instancia de Flask.
+      __name__ le dice a Flask en qué módulo se está ejecutando la aplicación, lo que ayuda a encontrar archivos y recursos relacionados.
+
+
+Definición de una ruta:
+
+      @app.route('/personas', methods=['GET']) indica que esta función responderá cuando alguien haga una solicitud GET a la URL /personas.
+
+Definición de la función:
+
+      index() es la función que se ejecutará cuando alguien acceda a la ruta /personas.
+
+Definición de la lista de personas:
+
+     Se crea una lista llamada lista_personas, que contiene diccionarios.
+     Cada diccionario tiene una clave 'name' con el nombre de una persona como valor.
+
+Retorno de la respuesta JSON:
+
+     jsonify(lista_personas) convierte la lista de personas en un formato JSON válido.
+     Se devuelve esta lista como respuesta a la solicitud GET.
+
+Ejecución del servidor:
+
+      if __name__ == '__main__': asegura que el código solo se ejecute si el archivo se ejecuta directamente, no si se importa como un módulo en otro programa.
+
+Ejecución de la aplicación Flask:
+
+      app.run(debug=True) inicia el servidor web de Flask.
+       El parámetro debug=True permite que Flask recargue automáticamente los cambios en el código y muestre mensajes de error detallados en caso de fallos.
+
+
+******************************************************
+Directorio: https://github.com/ThairConstante/electiva-act2
+******************************************************
